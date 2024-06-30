@@ -1,0 +1,115 @@
+header{
+	
+	background:#fff;
+}
+.header-main {
+	margin:0 auto;
+	position:relative;
+	max-width: 1024px;
+	width:92%;
+	padding-right:0px;
+}
+.header-logo{
+	float:left;
+	position:relative;
+	max-width:200px;
+	z-index:21;
+}
+/*------ navigation  ------------------------------------------------*/
+.header-nav-container {
+	float:right;
+	position:relative;
+}
+nav {
+	position:relative;
+	float:left;
+	width:100%;
+}
+nav li{
+	float:left;
+	position:relative;
+}
+nav li ul {
+	visibility: hidden;
+	position: absolute;
+	min-width:250px;
+	top: 36px;
+	background: #fff;
+	border-bottom:4px solid #000;
+}
+nav li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+}
+nav li ul li ul {
+	top: 0;
+}
+nav li ul li:hover  > ul  {
+	opacity: 1;
+	visibility: visible;
+	right: 100%;
+}
+nav li ul li {
+	float: none;
+	display: block;
+	border: 0;
+}
+nav li a {
+	float: left;
+	padding: 10px 22px;
+	font-size: 1.2em;
+	font-weight: 400;
+	top:0;
+	position:relative;
+}
+nav li a:before , nav li a:after {
+	content:'';
+	position:absolute;
+	background:#1bad58;
+	top:-4px;
+	left:4px;
+}
+nav li a:before  {
+	width:0;
+	height:2px;
+}
+nav li a:after {
+	width:2px;
+	height:0;
+}
+nav li a.act-link:before {
+	width:10px;
+}
+nav li a.act-link:after {
+	height:10px;
+}
+nav li ul a:before , nav li ul a:after {
+	display:none;
+}
+nav li ul a.act-link {
+	color:#000;
+	font-weight:600;
+}
+.header-nav-buttons {
+	float:right;
+	border-left:1px solid rgba(255,255,255,0.4);
+	margin:0 0 0 10px;
+	padding-left:22px;
+	display:none;
+}
+.nav-button {
+	float:right;
+	width:30px;
+	height:24px;
+	position:relative;
+	margin-top:9px;
+	cursor:pointer;
+}
+.nav-button span {
+	float:left;
+	width:100%;
+	height:4px;
+	background:#000;
+	margin-bottom:2px;
+	position:relative;
+}
